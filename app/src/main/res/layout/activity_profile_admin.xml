@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".CommunityCenterProfileActivity">
+
+
+        <RelativeLayout
+            android:id="@+id/welcome_card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:background="#CFD8DC">
+
+            <TextView
+                android:id="@+id/textViewUserUserEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/data_card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/welcome_card_view"
+            android:layout_marginTop="16dp"
+            android:padding="16dp"
+            android:background="#CFD8DC">
+
+            <TextView
+                android:id="@+id/instructions_textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:text="Please enter information for new item." />
+
+            <EditText
+                android:id="@+id/editTextInventory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/instructions_textView"
+                android:layout_marginTop="16dp"
+                android:inputType="textCapSentences"
+                android:hint="Enter your type of inventory here"/>
+
+            <EditText
+                android:id="@+id/editTextAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextInventory"
+                android:layout_marginTop="16dp"
+                android:inputType="number"
+                android:hint="Enter amount of inventory needed"/>
+
+            <Button
+                android:id="@+id/buttonAddInventory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextAmount"
+                android:layout_marginTop="16dp"
+                android:background="#00BCD4"
+                android:text="Save Information"/>
+
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/listViewInventory"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/data_card_view"
+            android:layout_marginTop="16dp"
+            android:dividerHeight="10dp"
+            android:divider="@android:color/transparent"/>
+
+</RelativeLayout>

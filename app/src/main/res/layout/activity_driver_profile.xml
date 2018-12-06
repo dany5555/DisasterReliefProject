@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".DriverProfileActivity">
+
+    <RelativeLayout
+        android:id="@+id/welcome_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="#CFD8DC">
+
+        <TextView
+            android:id="@+id/textViewDriver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Welcome Driver"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcome_card_view"
+        android:layout_marginTop="16dp"
+        android:padding="16dp"
+        android:background="#CFD8DC">
+
+        <TextView
+            android:id="@+id/next_destinations_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Next Destinations"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textColor="#000"/>
+
+        <ListView
+            android:id="@+id/listViewAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/next_destinations_textView"
+            android:layout_marginTop="16dp"
+            android:dividerHeight="10dp"
+            android:divider="@android:color/transparent"/>
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
